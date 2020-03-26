@@ -34,13 +34,13 @@ body {
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
 }
 
-.logo-box {
+.header__logo-box {
   position: absolute;
   top: 40px;
   left: 40px;
 }
 
-.logo {
+.header__logo {
   height: 35px;
 }
 .heading-box {
@@ -56,14 +56,14 @@ body {
   backface-visibility: hidden;
   margin-bottom: 60px;
 }
-.heading-primary-main {
+.heading-primary--main {
   display: block;
   font-size: 60px;
   font-weight: 400;
   letter-spacing: 35px;
   animation: moveInRight 1s ease-out;
 }
-.heading-primary-sub {
+.heading-primary--sub {
   display: block;
   font-weight: 700;
   font-size: 20px;
@@ -144,7 +144,7 @@ body {
   transform: translateY(-1px);
   box-shadow: 0 2px 10px 20px rgba(0, 0, 0, 0.4);
 }
-.btn-white {
+.btn--white {
   background: #ffffff;
   color: #777;
 }
@@ -160,14 +160,14 @@ body {
   z-index: -1;
   transition: all 0.4s;
 }
-.btn-white::after {
+.btn--white::after {
   background-color: #fff;
 }
 .btn:hover::after {
   transform: scaleX(1.4) scaleY(1.8);
   opacity: 0;
 }
-.btn-animated {
+.btn--animated {
   animation: moveInBottom 1s ease-out 0.75s;
   animation-fill-mode: backwards; /* applies the 0% before animation start */
 }
