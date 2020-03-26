@@ -52,16 +52,62 @@ body {
 .heading-primary {
   color: #fff;
   text-transform: uppercase;
+  backface-visibility: hidden; /* see on google */
 }
 .heading-primary-main {
   display: block;
   font-size: 60px;
   font-weight: 400;
   letter-spacing: 35px;
+  animation: moveInRight 1s ease-out;
 }
 .heading-primary-sub {
   display: block;
   font-weight: 700;
   font-size: 20px;
   letter-spacing: 17.4px;
+  animation: moveInLeft 1s ease-out;
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  60% {
+    opacity: 0.6;
+    color: rgba(0, 0, 255, 0.884);
+    transform: translateX(5px);
+  }
+
+  80% {
+    opacity: 0.8;
+    color: rgba(255, 0, 0, 0.89);
+    transform: translateX(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  60% {
+    opacity: 0.6;
+    color: rgb(255, 0, 234);
+    transform: translateX(-5px);
+  }
+  80% {
+    opacity: 0.8;
+    color: rgb(250, 196, 114);
+    transform: translateX(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
