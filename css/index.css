@@ -79,7 +79,7 @@ body {
     color: rgba(0, 0, 255, 0.884);
     transform: translateX(5px);
   }
-
+  /* remove this */
   80% {
     opacity: 0.8;
     color: rgba(255, 0, 0, 0.89);
