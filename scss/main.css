@@ -332,7 +332,7 @@ body {
 
 .p1 {
   position: absolute;
-  width: 55%;
+  width: 50%;
   top: 0;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
@@ -349,9 +349,9 @@ body {
 
 .p2 {
   position: absolute;
-  width: 55%;
-  left: 45%;
-  top: 50px;
+  width: 50%;
+  left: 42%;
+  top: 40px;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
   z-index: 1;
@@ -367,9 +367,9 @@ body {
 
 .p3 {
   position: absolute;
-  width: 55%;
+  width: 50%;
   left: 20%;
-  top: 130px;
+  top: 115px;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
   z-index: 2;
@@ -383,9 +383,38 @@ body {
   z-index: 3;
 }
 
+.feature-box {
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 1.5rem;
+  padding: 2.5rem;
+  text-align: center;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+          box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.feature-box__icon {
+  font-size: 6rem;
+  margin-bottom: 0.6rem;
+  display: inline-block;
+  background-image: -webkit-gradient(linear, left top, right top, from(#7ed56f), to(#28b485));
+  background-image: linear-gradient(to right, #7ed56f, #28b485);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.feature-box:hover {
+  -webkit-transform: translateY(-1.5rem) scale(1.03);
+          transform: translateY(-1.5rem) scale(1.03);
+}
+
 .row {
   max-width: 114rem;
-  background-color: #eee;
   margin: 0 auto;
 }
 
@@ -400,13 +429,22 @@ body {
 }
 
 .row .col-1-of-2 {
-  width: calc((100% - 2rem) / 2);
+  width: calc((100% - 6rem) / 2);
   float: left;
   height: 350px;
 }
 
 .row .col-1-of-2:not(:last-child) {
-  margin-right: 2rem;
+  margin-right: 6rem;
+}
+
+.row .col-1-of-4 {
+  width: calc((100% - (3 * 6rem)) / 4);
+  float: left;
+}
+
+.row .col-1-of-4:not(:last-child) {
+  margin-right: 6rem;
 }
 
 .header {
@@ -432,7 +470,22 @@ body {
 
 .section-about {
   background-color: #f7f7f7;
-  padding: 25rem 0;
+  padding: 20rem 0 25rem 0;
   margin-top: -20vh;
+}
+
+.section-features {
+  padding: 20rem 0;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(126, 213, 111, 0.795)), to(rgba(40, 180, 133, 0.801))), url(../image/nat-4.jpg);
+  background-image: linear-gradient(to right, rgba(126, 213, 111, 0.795), rgba(40, 180, 133, 0.801)), url(../image/nat-4.jpg);
+  background-size: cover;
+  margin-top: -15.5vh;
+  -webkit-transform: skewY(-7deg);
+          transform: skewY(-7deg);
+}
+
+.section-features > * {
+  -webkit-transform: skewY(7deg);
+          transform: skewY(7deg);
 }
 /*# sourceMappingURL=main.css.map */
