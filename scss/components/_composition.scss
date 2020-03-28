@@ -1,0 +1,48 @@
+.composition {
+  position: relative;
+}
+.p1 {
+  position: absolute;
+  width: 55%;
+  top: 0;
+  transition: all 0.2s;
+
+  left: 0;
+  &:hover {
+    transform: scale(1.2);
+    border: 10px solid green;
+    padding: 15px;
+    z-index: 3;
+  }
+}
+.p2 {
+  position: absolute;
+  width: 55%;
+  left: 45%;
+  top: 50px;
+  transition: all 0.2s;
+
+  z-index: 1;
+  &:hover {
+    transform: scale(1.2);
+    border: 10px solid green;
+    padding: 15px;
+    z-index: 3;
+  }
+}
+
+.p3 {
+  position: absolute;
+  width: 55%;
+  left: 20%;
+  top: 130px;
+  transition: all 0.2s;
+
+  z-index: 2;
+  &:hover {
+    transform: scale(1.2);
+    border: 10px solid green;
+    padding: 15px;
+    z-index: 3;
+  }
+}

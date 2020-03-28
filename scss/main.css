@@ -326,6 +326,63 @@ body {
           transform: translateY(0);
 }
 
+.composition {
+  position: relative;
+}
+
+.p1 {
+  position: absolute;
+  width: 55%;
+  top: 0;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  left: 0;
+}
+
+.p1:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  border: 10px solid green;
+  padding: 15px;
+  z-index: 3;
+}
+
+.p2 {
+  position: absolute;
+  width: 55%;
+  left: 45%;
+  top: 50px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  z-index: 1;
+}
+
+.p2:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  border: 10px solid green;
+  padding: 15px;
+  z-index: 3;
+}
+
+.p3 {
+  position: absolute;
+  width: 55%;
+  left: 20%;
+  top: 130px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  z-index: 2;
+}
+
+.p3:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  border: 10px solid green;
+  padding: 15px;
+  z-index: 3;
+}
+
 .row {
   max-width: 114rem;
   background-color: #eee;
@@ -345,6 +402,7 @@ body {
 .row .col-1-of-2 {
   width: calc((100% - 2rem) / 2);
   float: left;
+  height: 350px;
 }
 
 .row .col-1-of-2:not(:last-child) {

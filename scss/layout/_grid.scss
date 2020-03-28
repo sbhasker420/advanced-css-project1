@@ -12,6 +12,7 @@
   .col-1-of-2 {
     width: calc((100% - #{$gutter-horizontal}) / 2);
     float: left;
+    height: 350px; // temporary optiion , remove it
 
     &:not(:last-child) {
       margin-right: $gutter-horizontal;
