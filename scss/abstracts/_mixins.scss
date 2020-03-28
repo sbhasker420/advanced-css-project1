@@ -1,0 +1,7 @@
+@mixin clearfix {
+  &::after {
+    content: ""; // important to add
+    display: table; // standard
+    clear: both; // to get back high , lost due to float
+  }
+}
