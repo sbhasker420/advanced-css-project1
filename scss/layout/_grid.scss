@@ -26,4 +26,14 @@
       margin-right: $gutter-horizontal;
     }
   }
+  .col-1-of-3 {
+    width: calc((100% - (2 * #{$gutter-horizontal})) / 3);
+
+    float: left;
+    // height: 350px; // temporary option , remove it
+
+    &:not(:last-child) {
+      margin-right: $gutter-horizontal;
+    }
+  }
 }
